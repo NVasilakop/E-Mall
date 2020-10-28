@@ -1,0 +1,82 @@
+{"candies":[{
+    "weight":1,
+    "allias":"lolli",
+    "nutrition":{
+        "protein":10,
+        "carbs":2,
+        "fat":3,
+        "sugar":0.3
+    },  
+    "image":"https://cdn.pixabay.com/photo/2012/06/27/15/02/candy-50838_1280.jpg",
+    "type":1,
+    "name":"Lollipop",
+    "origin":"China"
+},
+{
+    "weight":2,
+    "allias":"yep",
+    "nutrition":{
+        "protein":10,
+        "carbs":2,
+        "fat":3,
+        "sugar":0.3
+    },  
+    "image":"https://cdn.pixabay.com/photo/2016/05/26/16/27/baking-1417494_1280.jpg",
+    "type":1,
+    "name":"",
+    "origin":"GR"
+},{
+    "weight":3,
+    "allias":"",
+    "nutrition":{
+        "protein":10,
+        "carbs":2,
+        "fat":3,
+        "sugar":0.3
+    },  
+    "image":"https://cdn.pixabay.com/photo/2010/12/13/10/13/chocolate-2554_1280.jpg",
+    "type":2,
+    "name":"",
+    "origin":"US"
+},
+{
+    "weight":4,
+    "allias":"",
+    "nutrition":{
+        "protein":10,
+        "carbs":2,
+        "fat":3,
+        "sugar":0.3
+    },  
+    "image":"https://cdn.pixabay.com/photo/2017/03/27/12/26/macaroons-2178371_1280.jpg",
+    "type":2,
+    "name":"",
+    "origin":"ES"
+},
+{
+    "weight":5,
+    "allias":"",
+    "nutrition":{
+        "protein":10,
+        "carbs":2,
+        "fat":3,
+        "sugar":0.3
+    },  
+    "image":"https://cdn.pixabay.com/photo/2018/06/19/23/25/sugar-3485430_1280.jpg",
+    "type":3,
+    "name":"",
+    "origin":"IT"
+},{
+    "weight":6,
+    "allias":"",
+    "nutrition":{
+        "protein":10,
+        "carbs":2,
+        "fat":3,
+        "sugar":0.3
+    },  
+    "image":"https://cdn.pixabay.com/photo/2018/06/22/14/44/creme-brulee-3490886_1280.jpg",
+    "type":4,
+    "name":"",
+    "origin":"EN"
+}]}

@@ -1,0 +1,79 @@
+.card{
+    border: none;
+}
+#myToast{
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+  overflow: visible !important;
+}
+.bg-purple {
+  background: -webkit-linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%), -webkit-radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+  background: -o-linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%), -o-radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+  background: -moz-linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%), -moz-radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+  background: linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%), radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+}
+.card-body{
+  // background: -webkit-linear-gradient(110deg, #ff9900 40%, rgba(0, 0, 0, 0) 30%), -webkit-radial-gradient(farthest-corner at 0% 0%, #ff9900 70%, #ffcc00 70%);
+  // background: -o-linear-gradient(110deg, #ff9933 40%, rgba(0, 0, 0, 0) 30%), -o-radial-gradient(farthest-corner at 0% 0%, #ff9933 70%, #ff9900 70%);
+  // background: -moz-linear-gradient(110deg,#ffcc00 40%, rgba(0, 0, 0, 0) 30%), -moz-radial-gradient(farthest-corner at 0% 0%, #ffcc00 70%, #ff9933 70%);
+  background: linear-gradient(110deg, #ff9933 40%, rgba(0, 0, 0, 0) 30%), radial-gradient(farthest-corner at 0% 0%, #ffcc00 70%, #ff9900 70%);
+}
+// .card {
+//   font-family: -apple-system, BlinkMacSystemFont, 'Open Sans', sans-serif;
+//   font-size: 3em;
+//   font-weight: 800;
+//   height: 4em;
+//   width: 64em;
+//   padding: 0.5em 1em;
+//   border-radius: 0.25em;
+//   display: table-cell;
+//   vertical-align: middle;
+//   letter-spacing: -2px;
+//   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+// }
+
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: fixed;
+  z-index: 1;
+  overflow: visible !important;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.modal{
+  display: block;
+}
+
+.modal-body:before,
+  .modal-body:after {
+    display: table;
+    content: " ";
+}
+
+.modal-header:before,
+.modal-header:after {
+  display: table;
+  content: " ";
+}
