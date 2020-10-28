@@ -1,0 +1,42 @@
+<!-- <p>candy-shop works!</p> -->
+<div class="toast" id="myToast" style="position:fixed; bottom:30px; right: 0;">
+  <div class="toast-header">
+      <strong class="mr-auto">
+        <i class="fa fa-grav"></i> We miss you!</strong>
+      <small>Nick V.</small>
+      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">
+          <span aria-hidden="true">&times;</span>
+      </button>
+  </div>
+  <div class="toast-body">
+      <div>It's been a long time since you visited us. We've something special for you. <a href="#">Click here!</a></div>
+  </div>
+</div>
+<!-- <div class="flex-row align-items-center " > 
+<div class="container"> 
+<div class="card-deck">
+        <div class="card" *ngFor="let candy of candies">
+        <img src={{candy.image}} class="card-img-top" alt="...">
+        <div class="card-block">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">{{candy.allias}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+<div class="row row-cols-1 row-cols-md-3">
+  <div class="col mb-4" *ngFor="let candy of candies;let i = index">
+    <div class="card">
+      <img src={{candy.image}} class="card-img-top" alt="..." (mouseover)='mouseEnter(i)' (mouseleave)='mouseOut(i)'>
+      <!-- <div *ngIf="hovered" class="tooltip">
+        <div class="tooltiptext">Nai poios einai</div>
+      </div> -->
+      <div class="card-body">
+        <h5 class="card-title">{{candy.name}}</h5>
+        <p class="card-text">{{candy.allias}}</p>
+        <a href="#" class="thyTooltip" data-toggle="tooltip" title={{candy.nutrition.protein}}>Nutrional Information</a>
+      </div>
+    </div>
+  </div>
+</div>

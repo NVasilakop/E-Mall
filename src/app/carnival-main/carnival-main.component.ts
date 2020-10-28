@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+// const popcorn = document.querySelector('#popcorn');
+// const tooltip = document.querySelector('#tooltip');
+// createPopper(popcorn, tooltip);
+
 
 @Component({
   selector: 'app-carnival-main',
@@ -7,9 +12,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarnivalMainComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit() {
   }
 
+  goToNewComponent(){
+    this.router.navigate(['/candyShop']);
+  }
 }
