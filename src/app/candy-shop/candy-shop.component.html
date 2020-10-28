@@ -1,5 +1,5 @@
 <!-- <p>candy-shop works!</p> -->
-<div class="toast" id="myToast" style="position:fixed; bottom:30px; right: 0;">
+<div class="toast" id="myToast" style="position:fixed; bottom:30px; left: 0;">
   <div class="toast-header">
       <strong class="mr-auto">
         <i class="fa fa-grav"></i> We miss you!</strong>
@@ -25,7 +25,7 @@
     </div>
   </div>
 </div> -->
-<div class="row row-cols-1 row-cols-md-3">
+<div class="row row-cols-1 row-cols-md-3 bg-purple">
   <div class="col mb-4" *ngFor="let candy of candies;let i = index">
     <div class="card">
       <img src={{candy.image}} class="card-img-top" alt="..." (mouseover)='mouseEnter(i)' (mouseleave)='mouseOut(i)'>
@@ -33,10 +33,42 @@
         <div class="tooltiptext">Nai poios einai</div>
       </div> -->
       <div class="card-body">
-        <h5 class="card-title">{{candy.name}}</h5>
-        <p class="card-text">{{candy.allias}}</p>
-        <a href="#" class="thyTooltip" data-toggle="tooltip" title={{candy.nutrition.protein}}>Nutrional Information</a>
+        <!-- <h5 class="card-title">{{candy.name}}</h5> -->
+        <!-- <p class="card-text">{{candy.allias}}</p> -->
+        <!-- <h5 type="button" class="card-title " data-toggle="popover" data-content={{candy.allias}}>{{candy.name}}</h5> -->
+        <!-- <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right"
+         data-content={{candy.allias}}>
+          {{candy.name}}
+        </button> -->
+        <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover"
+         data-placement="right" data-content='Must put candy.allias'>
+          {{candy.name}}
+        </button>
+        <!-- <a href="#" class="thyTooltip" data-toggle="tooltip" title={{candy.nutrition.protein}}>Nutrional Information</a> -->
       </div>
     </div>
   </div>
 </div>
+    <div *ngIf="modalShow" class="modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Did you like the app?</h5>
+            <div class="close" data-dismiss="modal" aria-label="close" (click)="closeModal()">
+              <span aria-hidden="true">&times;</span>
+            </div>
+          </div>
+          <div class="modal-body">
+            Then let be in contact with you
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="closeModal()">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- </div>
+  </div>
+</div> -->
+<app-footer></app-footer>

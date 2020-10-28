@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light" id="menuNavbar">
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light" id="menuNavbar">
     <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -9,7 +9,6 @@
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <!-- <a class="nav-link" href="#">Features</a> -->
           <a [routerLink]="['/mainCarnival']">Carnival Time</a>
         </li>
         <li class="nav-item">
@@ -27,5 +26,18 @@
         </li>
       </ul>
     </div>
-  </nav>
-  <router-outlet></router-outlet>
+  </nav> -->
+  <div id="myNav" class="overlay">
+    <button  class="closebtn" (click)="closeNav()">&times;</button>
+    <div class="overlay-content">
+      <!-- <a (click)="closeNav()" [routerLink]="['/mainCarnival']">Carnival Time</a> -->
+      <a (click)="closeNav();navigateToCarnival()">Carnival Time</a>
+      <a (click)="closeNav();navigateToMovies()">MovieTheater</a>
+    </div>
+  </div>
+  <div>
+    <span style="font-size:30px;cursor:pointer" (click)="openNav()">&#9776; E-Mall</span>
+  </div>
+  
+ 
+  <!-- <router-outlet></router-outlet> -->

@@ -3,6 +3,8 @@ import { Router } from '@angular/router';
 // const popcorn = document.querySelector('#popcorn');
 // const tooltip = document.querySelector('#tooltip');
 // createPopper(popcorn, tooltip);
+declare var $:any;
+
 
 
 @Component({
@@ -15,6 +17,9 @@ export class CarnivalMainComponent implements OnInit {
   constructor(private router:Router) { }
 
   ngOnInit() {
+    // $('.carousel').carousel({
+    //   interval: 2000
+    // })
   }
 
   goToNewComponent(){
